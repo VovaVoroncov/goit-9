@@ -39,7 +39,7 @@ public class TimezoneValidateFilter extends HttpFilter {
         super.destroy();
     }
 
-    private boolean isValidTimezone(String timezone) {
+    public boolean isValidTimezone(String timezone) {
         try {
             ZoneId.of(timezone);
             return true;
